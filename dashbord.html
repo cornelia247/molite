@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Dashboard</title>
+    <script src="https://kit.fontawesome.com/37d88543f7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="d-container">
+        <div class="nav-section">
+            <div class="d-logo"><a href="#"><img src="images/logo2.svg" alt="logo"></a></div>
+            <div class="d-select">
+
+                <span>Location</span>
+                <div class="select-box">
+
+
+                    <div class="options-container">
+
+                        <div class="option">
+                            <input type="radio" class="radio" id="ekosodin" name="category">
+                            <label for="ekosodin">Ekosodin</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="bdpa" name="category">
+                            <label for="bdpa">BDPA</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="osasogie" name="category">
+                            <label for="osasogie">Osasogie</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="others" name="category">
+                            <label for="others">Others</label>
+                        </div>
+                    </div>
+                    <div class="selected">
+                        <p>Select location</p>
+
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </div>
+
+                <span>Availabilty</span>
+                <div class="select-box">
+
+
+                    <div class="options-container">
+
+                        <div class="option">
+                            <input type="radio" class="radio" id="available name=" category">
+                            <label for="available">Available</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="pending" name="category">
+                            <label for="pending">Pending</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="notavailable" name="category">
+                            <label for="notavailable">Not Available</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="all" name="category">
+                            <label for="all">All</label>
+                        </div>
+                    </div>
+                    <div class="selected">
+                        <p>Select Availability</p>
+
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </div>
+
+
+                <div class="d-checkbox">
+                    <p>Flat type</p>
+                    <div class="checkbox-container"><input type="checkbox" name="flats" id="bed" class="checkbox-input">
+                        <label for="bed" class="checkbox-label">Bed
+                            seater/Self contain</label>
+                    </div>
+                    <div class=" checkbox-container"><input type="checkbox" name="flats" id="hostel"
+                            class="checkbox-input">
+                        <label for="hostel" class="checkbox-label">Hostel/Apartment
+                            building</label>
+                    </div>
+                    <div class="checkbox-container"><input type="checkbox" name="flats" id="two" class="checkbox-input">
+                        <label for="two" class="checkbox-label">2
+                            bedroom
+                            flat</label>
+                    </div>
+                    <div class=" checkbox-container"><input type="checkbox" name="flats" id="three"
+                            class="checkbox-input">
+                        <label for="three" class="checkbox-label">3
+                            bedroom
+                            flat</label>
+                    </div>
+                </div>
+                <div class=" d-perks">
+                    <p>Perks</p>
+                    <div class="d-perks-container">
+                        <div class="perk"> <label for="security">
+                                <input type="checkbox" name="perks" id="security">
+                                <span>Area Security</span>
+                            </label>
+                        </div>
+                        <div class="perk">
+                            <label for="water">
+                                <input type="checkbox" name="perks" id="water">
+                                <span>Constant water</span>
+                            </label>
+                        </div>
+                        <div class="perk">
+                            <label for="ensuit">
+                                <input type="checkbox" name="perks" id="ensuit">
+                                <span>Ensuit</span>
+                            </label>
+                        </div>
+                        <div class="perk">
+                            <label for="road">
+                                <input type="checkbox" name="perks" id="road">
+                                <span>Close to road</span>
+                            </label>
+                        </div>
+                        <div class="perk">
+                            <label for="large">
+                                <input type="checkbox" name="perks" id="large">
+                                <span>Large room</span>
+                            </label>
+                        </div>
+                        <div class="perk">
+                            <label for="furnished">
+                                <input type="checkbox" name="perks" id="furnished">
+                                <span>Furnished</span>
+                            </label>
+                        </div>
+                        <div class="perk">
+                            <label for="school">
+                                <input type="checkbox" name="perks" id="school">
+                                <span>Close to school</span>
+                            </label>
+                        </div>
+                        <div class="perk">
+                            <label for="power">
+                                <input type="checkbox" name="perks" id="power">
+                                <span>Back up power</span>
+                            </label>
+                        </div>
+                        <div class="perk">
+                            <label for="goodroad">
+                                <input type="checkbox" name="perks" id="goodroad">
+                                <span>Good road</span>
+                            </label>
+                        </div>
+                    </div>
+
+
+                    <div class="mobilizer">
+                        <span><a href="#">Become a mobilizer</a></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="dashboard">
+            <div class="dash-content">
+                <div class="nav-dash">
+                    <div class="nav-info">
+                        <a href="#"><img src="images/moustache.png" alt="profile"></a>
+                        <ul>
+                            <li><b>Saliu Ameen</b> </li>
+                            <li class="tiny">Account</li>
+                        </ul>
+                    </div>
+
+                    <a href="#">Logout</a>
+                </div>
+                <div class="dash-container">
+                    <div class="d-filter">
+                        <span>2 bedroom</span>
+
+
+                    </div>
+                    <div class="apartments">
+                        <div class="apartment">
+                            <img src="images/brick.png" alt="apartment">
+                            <div class="availability">Available</div>
+                            <p class="location">Brick Mansion, Ekosodin</p>
+                            <ul>
+                                <li class="amount"><b>N150,000</b> /year</li>
+                                <li class="specification">2 bedrooms | 2 bathrooms</li>
+                            </ul>
+                        </div>
+                        <div class="apartment">
+                            <img src="images/brick.png" alt="apartment">
+                            <div class="availability">Available</div>
+                            <p class="location">Brick Mansion, Ekosodin</p>
+                            <ul>
+                                <li class="amount"><b>N150,000</b> /year</li>
+                                <li class="specification">2 bedrooms | 2 bathrooms</li>
+                            </ul>
+                        </div>
+                        <div class="apartment">
+                            <img src="images/brick.png" alt="apartment">
+                            <div class="availability">Available</div>
+                            <p class="location">Brick Mansion, Ekosodin</p>
+                            <ul>
+                                <li class="amount"><b>N150,000</b> /year</li>
+                                <li class="specification">2 bedrooms | 2 bathrooms</li>
+                            </ul>
+                        </div>
+                        <div class="apartment">
+                            <img src="images/brick.png" alt="apartment">
+                            <div class="availability">Available</div>
+                            <p class="location">Brick Mansion, Ekosodin</p>
+                            <ul>
+                                <li class="amount"><b>N150,000</b> /year</li>
+                                <li class="specification">2 bedrooms | 2 bathrooms</li>
+                            </ul>
+                        </div>
+                        <div class="apartment">
+                            <img src="images/brick.png" alt="apartment">
+                            <div class="availability">Available</div>
+                            <p class="location">Brick Mansion, Ekosodin</p>
+                            <ul>
+                                <li class="amount"><b>N150,000</b> /year</li>
+                                <li class="specification">2 bedrooms | 2 bathrooms</li>
+                            </ul>
+                        </div>
+                        <div class="apartment">
+                            <img src="images/brick.png" alt="apartment">
+                            <div class="availability">Available</div>
+                            <p class="location">Brick Mansion, Ekosodin</p>
+                            <ul>
+                                <li class="amount"><b>N150,000</b> /year</li>
+                                <li class="specification">2 bedrooms|2 bathrooms</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
