@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <div class="d-container">
+
+        <div id="nav-sidebar">
+            <div class="d-info">
+                <a href="#"><img src="images/logo2.svg" alt="logo"></a>
+
+                <i class="fa fa-times" id="sidebarIcon" onclick="closeSidebar()"></i>
+            </div>
+            <div class="d-select">
+                <div class="select-box">
+                    <a href="#" class="select">Mobilisations</a>
+                    <a href="#" class="select active">Profile</a>
+                </div>
+                <div>
+                    <div class="mobilizer2">
+                        <span><a href="#">Become a mobilizer</a></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <nav class="nav-bar">
+            <div class="nav-info">
+                <div class="d-hamburger" onclick="toggleSidebar()">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <a href="#"><img src="images/moustache.png" alt="profile"></a>
+
+                <ul>
+                    <li><b>Saliu Ameen</b> </li>
+                    <li class="tiny">Account</li>
+                </ul>
+                <a href="#" class="home">Home</a>
+
+            </div>
+
+            <a href="#">Logout</a>
+        </nav>
+        <main>
+            <div class="dash-container">
+                <div class="display-pic">
+                    <a href="#"><img src="images/moustache2.png" alt="profile"></a>
+                </div>
+                <div class="personal-data">
+                    <span>Personal data</span>
+                    <img src="images/pen.svg" alt="pen">
+
+
+                </div>
+                <div class="border-line"></div>
+                <div class="info">
+                    <p class="name">Okocha Madu</p>
+                    <p class="email">madukoch@sample.com</p>
+                </div>
+                <div class="border-line"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

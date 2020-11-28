@@ -5,15 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Dashboard</title>
-    <script src="https://kit.fontawesome.com/37d88543f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
 </head>
 
 <body>
     <div class="d-container">
-        <div class="nav-section">
-            <div class="d-logo"><a href="#"><img src="images/logo2.svg" alt="logo"></a></div>
+
+        <div id="nav-sidebar">
+            <div class="d-info">
+                <a href="#"><img src="images/logo2.svg" alt="logo"></a>
+                <i class="fa fa-times" id="sidebarIcon" onclick="closeSidebar()"></i>
+            </div>
             <div class="d-select">
 
                 <span>Location</span>
@@ -42,7 +48,7 @@
                     <div class="selected">
                         <p>Select location</p>
 
-                        <i class="fas fa-sort-down"></i>
+                        <i class="fa fa-sort-down"></i>
                     </div>
                 </div>
 
@@ -72,7 +78,7 @@
                     <div class="selected">
                         <p>Select Availability</p>
 
-                        <i class="fas fa-sort-down"></i>
+                        <i class="fa fa-sort-down"></i>
                     </div>
                 </div>
 
@@ -166,89 +172,102 @@
                 </div>
             </div>
         </div>
-        <div class="dashboard">
-            <div class="dash-content">
-                <div class="nav-dash">
-                    <div class="nav-info">
-                        <a href="#"><img src="images/moustache.png" alt="profile"></a>
+        <nav class="nav-bar">
+            <div class="nav-info">
+                <div class="d-hamburger" onclick="toggleSidebar()">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <a href="#"><img src="images/moustache.png" alt="profile"></a>
+
+                <ul>
+                    <li><b>Saliu Ameen</b> </li>
+                    <li class="tiny">Account</li>
+                </ul>
+            </div>
+
+            <a href="#">Logout</a>
+        </nav>
+        <main>
+            <div class="dash-container">
+                <div class="d-filter">
+                    <span>2 bedroom</span>
+
+
+                </div>
+                <div class="apartments">
+                    <div class="apartment">
+                        <div class="apartment-image">
+                            <img src="images/brick.png" alt="apartment">
+                            <div class="availability">Available</div>
+                        </div>
+                        <p class="location">Brick Mansion, Ekosodin</p>
                         <ul>
-                            <li><b>Saliu Ameen</b> </li>
-                            <li class="tiny">Account</li>
+                            <li class="amount"><b>N150,000</b> /year</li>
+                            <li class="specification">2 bedrooms | 2 bathrooms</li>
+                        </ul>
+                    </div>
+                    <div class="apartment">
+                        <div class="apartment-image">
+                            <img src="images/brick.png" alt="apartment">
+                            <div class="availability">Available</div>
+                        </div>
+                        <p class="location">Brick Mansion, Ekosodin</p>
+                        <ul>
+                            <li class="amount"><b>N150,000</b> /year</li>
+                            <li class="specification">2 bedrooms | 2 bathrooms</li>
+                        </ul>
+                    </div>
+                    <div class="apartment">
+                        <div class="apartment-image">
+                            <img src="images/brick.png" alt="apartment">
+                            <div class="availability">Available</div>
+                        </div>
+                        <p class="location">Brick Mansion, Ekosodin</p>
+                        <ul>
+                            <li class="amount"><b>N150,000</b> /year</li>
+                            <li class="specification">2 bedrooms | 2 bathrooms</li>
+                        </ul>
+                    </div>
+                    <div class="apartment">
+                        <div class="apartment-image">
+                            <img src="images/brick.png" alt="apartment">
+                            <div class="availability">Available</div>
+                        </div>
+                        <p class="location">Brick Mansion, Ekosodin</p>
+                        <ul>
+                            <li class="amount"><b>N150,000</b> /year</li>
+                            <li class="specification">2 bedrooms | 2 bathrooms</li>
+                        </ul>
+                    </div>
+                    <div class="apartment">
+                        <div class="apartment-image">
+                            <img src="images/brick.png" alt="apartment">
+                            <div class="availability">Available</div>
+                        </div>
+                        <p class="location">Brick Mansion, Ekosodin</p>
+                        <ul>
+                            <li class="amount"><b>N150,000</b> /year</li>
+                            <li class="specification">2 bedrooms | 2 bathrooms</li>
+                        </ul>
+                    </div>
+                    <div class="apartment">
+                        <div class="apartment-image">
+                            <img src="images/brick.png" alt="apartment">
+                            <div class="availability">Available</div>
+                        </div>
+                        <p class="location">Brick Mansion, Ekosodin</p>
+                        <ul>
+                            <li class="amount"><b>N150,000</b> /year</li>
+                            <li class="specification">2 bedrooms | 2 bathrooms</li>
                         </ul>
                     </div>
 
-                    <a href="#">Logout</a>
-                </div>
-                <div class="dash-container">
-                    <div class="d-filter">
-                        <span>2 bedroom</span>
-
-
-                    </div>
-                    <div class="apartments">
-                        <div class="apartment">
-                            <img src="images/brick.png" alt="apartment">
-                            <div class="availability">Available</div>
-                            <p class="location">Brick Mansion, Ekosodin</p>
-                            <ul>
-                                <li class="amount"><b>N150,000</b> /year</li>
-                                <li class="specification">2 bedrooms | 2 bathrooms</li>
-                            </ul>
-                        </div>
-                        <div class="apartment">
-                            <img src="images/brick.png" alt="apartment">
-                            <div class="availability">Available</div>
-                            <p class="location">Brick Mansion, Ekosodin</p>
-                            <ul>
-                                <li class="amount"><b>N150,000</b> /year</li>
-                                <li class="specification">2 bedrooms | 2 bathrooms</li>
-                            </ul>
-                        </div>
-                        <div class="apartment">
-                            <img src="images/brick.png" alt="apartment">
-                            <div class="availability">Available</div>
-                            <p class="location">Brick Mansion, Ekosodin</p>
-                            <ul>
-                                <li class="amount"><b>N150,000</b> /year</li>
-                                <li class="specification">2 bedrooms | 2 bathrooms</li>
-                            </ul>
-                        </div>
-                        <div class="apartment">
-                            <img src="images/brick.png" alt="apartment">
-                            <div class="availability">Available</div>
-                            <p class="location">Brick Mansion, Ekosodin</p>
-                            <ul>
-                                <li class="amount"><b>N150,000</b> /year</li>
-                                <li class="specification">2 bedrooms | 2 bathrooms</li>
-                            </ul>
-                        </div>
-                        <div class="apartment">
-                            <img src="images/brick.png" alt="apartment">
-                            <div class="availability">Available</div>
-                            <p class="location">Brick Mansion, Ekosodin</p>
-                            <ul>
-                                <li class="amount"><b>N150,000</b> /year</li>
-                                <li class="specification">2 bedrooms | 2 bathrooms</li>
-                            </ul>
-                        </div>
-                        <div class="apartment">
-                            <img src="images/brick.png" alt="apartment">
-                            <div class="availability">Available</div>
-                            <p class="location">Brick Mansion, Ekosodin</p>
-                            <ul>
-                                <li class="amount"><b>N150,000</b> /year</li>
-                                <li class="specification">2 bedrooms|2 bathrooms</li>
-                            </ul>
-                        </div>
-
-                    </div>
                 </div>
             </div>
-
-        </div>
+        </main>
     </div>
 
-    <script src="main.js"></script>
+    <script src="dashboard.js"></script>
 </body>
 
 </html>
