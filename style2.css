@@ -74,10 +74,9 @@ header{
     transition: .5s;
 }
 .input-group-append a:hover{
-    background: var(--blue);
+   
     text-decoration: none !important;
-    color:  #f8f9fa!important;
-    transform: scale(1.1);
+    
 }
 .input-group{
     width: 490px;
