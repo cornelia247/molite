@@ -263,7 +263,7 @@ footer ul li a{
     .form{
         display: block;
         width: 70%;
-        margin: 0 auto;
+        margin: 0;
     }
 } 
 @media only screen and (max-width : 480px) {
@@ -273,7 +273,7 @@ footer ul li a{
     .form{
         
         width: 60%;
-        margin: 0 auto;
+        margin: 0;
     }
     .boxes{
         grid-template-columns:1fr;
@@ -284,8 +284,9 @@ footer ul li a{
 
     }
     .input-group{
+       
         /* font-size: 16px; */
-        width: 300px;
+        width: 270px;
     }
     footer h3{
         font-size: 16px;
