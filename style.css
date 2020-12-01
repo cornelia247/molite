@@ -282,7 +282,8 @@ a {
 }
 .default-option .fas{
     position: absolute;
-    margin: 4px;
+    right: 5px;
+    top: 15%;
     
 }
 .default-option {
@@ -312,34 +313,37 @@ a {
     display: flex;
     
 } 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 900px) {
     
     .banner{
-    
+       
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
         grid-template-areas: 
         "banner-text"
         "search-bar"
         ;
+        justify-content: center;
     }
     .banner-text{
-        font-size: 55px;
+        font-size: 59px;
     }
-    .form-box{
-        width: 350px;
+    .search-bar{
+        width: 100%;
+        align-self: start;
     }
 }
 @media only screen and (max-width: 600px) {
     
    .banner-text{
-       width: 70%;
-        font-size: 40px;
+       
+        font-size: 54px;
     }
-    .form-box{
+    /* .form-box{
         width: 70%;
-        /* width: 290px; */
-    }
+        
+    } */
     /* .box{
         width: 100%;
         width: 250px;
@@ -348,8 +352,12 @@ a {
         grid-template-columns: 1fr;
     }
 }
-@media only screen and (max-width: 450px){
-    .form-box{
+@media only screen and (max-width: 400px){
+    .banner-text{
+       
+        font-size: 40px;
+    }
+    /* .form-box{
         width: 280px;
     }
     .default-option{
@@ -357,7 +365,7 @@ a {
     }
     .default-option .fas{
         position: absolute;
-    }
+    } */
 
 }
 
