@@ -29,7 +29,7 @@ ul{
     list-style: none;
 }
 .btn{
-    padding: 0.35rem 1rem;
+    padding: 0.5rem 1rem;
     text-decoration: none;
     color: var(--light);
     border: 0;
@@ -48,7 +48,7 @@ a {
 }
 /* header.. */
 #header{
-    background:url(images/couch1.png);
+    background:url(images/couch1.webp);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -221,10 +221,10 @@ a {
     list-style: none;
     width: 350px;
     background: #ffffff;
-    height: 35px;
+    height: 40px;
     border-radius: 5px;
     display:flex;
-    font-size: 14px;
+    font-size: 16px;
     justify-content: center;
     
     box-shadow: 0 8px 6px -10px #b3c6ff;
@@ -240,12 +240,12 @@ a {
     
 }
 .sea{
-    height: 2.1rem;
     background-color: var(--blue);
     transition: .5s;
 }
 .sea:hover{
-    transform: scale(1.1);}
+    transform: scale(1.1);
+}
    
 .form-box .dropdown{
     width: 100px;
@@ -261,10 +261,10 @@ a {
 .filter{
     display: none;
     position: absolute;
-    top: 35px;
+    top: 45px;
     left: -2.5px;
     background: #ffffff;
-    width: 80px;
+    width: auto;
     border-radius: 5px;
     padding: 15px;
     box-shadow: 8px 8px 6px -10px #b3c6ff;
@@ -282,7 +282,7 @@ a {
 }
 .default-option .fas{
     position: absolute;
-    right: 5px;
+    right: 2px;
     top: 15%;
     
 }
@@ -303,8 +303,8 @@ a {
     width: 100%;
     height: 100%;
     border: 0;
-    font-size: 14px;
-    padding-right: 10px;
+    font-size: 16px;
+    padding-right: 13px;
 }
 .filter-active{
    display: block; 
