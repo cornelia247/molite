@@ -392,7 +392,6 @@ a {
     list-style: none;
     color: rgba(255, 255, 255, 1);
     transition: .2s;
-    font-size: 14px;
 }
 .single-footer ul li a:hover{
     color: var(--yellow);
@@ -401,6 +400,7 @@ a {
     margin-bottom: 10px;
 }
 .single-footer>h3{
+    font-size: 18px;
     margin-bottom: 15px ;
 }
 @media only screen and (max-width: 900px) {
