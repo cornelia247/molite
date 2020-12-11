@@ -153,7 +153,7 @@ a {
         height: 23rem;
         top: 3.95rem;
         left: 0;
-        width: 100%;
+        width: auto;
         background-color: rgba(101, 101, 101, 0.9);
         flex-direction: column; 
         align-items: center;
@@ -300,7 +300,7 @@ a {
 }
 .form-box .form-field .search-field{
     outline: none;
-    width: 100%;
+    width: auto;
     height: 100%;
     border: 0;
     font-size: 14px;
@@ -330,7 +330,7 @@ a {
         font-size: 59px;
     }
     .search-bar{
-        width: 100%;
+        width: auto;
         align-self: start;
     }
 }
@@ -353,10 +353,11 @@ a {
     }
 }
 @media only screen and (max-width: 400px){
-    .banner-text{
+
+    /* .banner-text{
        
         font-size: 40px;
-    }
+    } */
     /* .form-box{
         width: 280px;
     }
@@ -373,7 +374,7 @@ a {
 .box-columns{
     display: grid;
     margin: 20px 50px;
-    grid-gap: 30px;
+    grid-gap: 20px;
 }
 .box-columns h2{
     text-align: center;
@@ -381,11 +382,15 @@ a {
 }
 #boxes{
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 30px;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
 }
 .box{
+    
     text-align: center;
+}
+.box img{
+    width:100%;
 }
 /* info section */
 .info{
@@ -410,7 +415,7 @@ a {
 }
 /* footer */
 .footer{
-    width: 100%;
+    width: auto;
     background: var(--blue);
 }
 .footer-wrapper{
@@ -427,21 +432,21 @@ a {
     
 }
 .single-footer{
-    width: 100%;
+    width: auto;
     color: rgba(255, 255, 255, 1);
     margin-bottom: 10px;
 
 
 }
 .single-footer a img{
-    width: 70%;
+    width: 80%;
 }
 .single-footer ul li a{
     text-decoration: none;
     outline: none;
     list-style: none;
     color: rgba(255, 255, 255, 1);
-    transition: .5s;
+    transition: .2s;
     font-size: 14px;
 }
 .single-footer ul li a:hover{
@@ -457,7 +462,8 @@ a {
 /*  */
 @media only screen and (max-width: 900px) {
     .footer-wrapper{
-        grid-gap: 30px;
+        column-gap: 60px;
+        row-gap: 10px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: 
