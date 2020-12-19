@@ -6,6 +6,9 @@
     box-sizing: border-box;
     
 }
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 :root {
     --yellow:rgba(249, 178, 51, 1);
     --blue: rgba(28, 54, 100, 1);
@@ -20,12 +23,15 @@
     --orange:#fc5e0b;
 }
 body{
+    box-sizing: border-box;
+    width: 100%;
     font-family: 'poppins', san serif;
     background: #fc5e0b;
-
+    overflow-x: hidden;
 
 }
 .d-container{
+    width: 100%;
     display: grid;
     height: 100vh;
     grid-template-columns: 1.1fr 1fr 1fr 1fr;
@@ -36,6 +42,7 @@ body{
     
 }
 .nav-bar{
+    width: 100%;
     background: #ffffff;
     grid-area: nav;
     height: 100px;
@@ -304,9 +311,10 @@ main{
     content: "\2714";
     position: absolute;
     top: 47%;
-    left: -10px;
+    left: -13px;
     transform: translate(-50%,-50%);
     color: var(--blue);
+    width: 4px;
 }
 .d-perks{
     color: white;
@@ -381,7 +389,7 @@ main{
     /* text-align: center; */
     color: var(--blue);
 }
-.select-box .select:hover{
+/* .select-box .select:hover{
     width: 327px;
     margin-right: 0px;
     background: #ffffff;
@@ -389,9 +397,9 @@ main{
     
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px ;
-}
+} */
 .select-box .select.active{
-   width: 327px;
+    width: 328px;
     margin-right: 0px;
     background: #ffffff;
     padding-left: 60px;
@@ -473,4 +481,19 @@ main{
         margin-bottom: 0;
 
     }
+}
+@media only screen and (max-width: 400px){
+    .home{
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    .lg{
+        font-size: 14px;
+    }
+    /* .navs{
+        
+        display: flex;
+        justify-content: space-between;
+    } */
+
 }
